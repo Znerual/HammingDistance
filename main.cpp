@@ -26,7 +26,7 @@ int main()
         cin >> HAMMING_DISTANCE;
         cout << "Set Hamming distance to " << HAMMING_DISTANCE << endl;
 
-        const int MAX_NUMBER = (2 << (SEQUENCE_LENGTH + 1) * 2) - 1;
+        const unsigned int MAX_NUMBER = 2 << (SEQUENCE_LENGTH * 2 - 1);
         cout << "Leading to a maximum number of " << MAX_NUMBER << endl;
 
         int group_id = 0;
