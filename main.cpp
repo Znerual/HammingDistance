@@ -85,7 +85,7 @@ int main()
         if (yaml_file.is_open()) {
             cout << "Write result to file" << endl;
             for (auto i = 0; i < MAX_NUMBER; i++) {
-                yaml_file << numbers[i] << ": " << group_ids[i] << '\n';
+                yaml_file << '"' << numbers[i] << '"' << ": " << group_ids[i] << '\n';
             }
         }
         else {
